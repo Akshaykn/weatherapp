@@ -1,0 +1,10 @@
+.corosal {
+  display: block;
+  overflow: scroll;
+  padding: 0px 10px 10px 10px;
+}
+.corosalInner{
+  display: flex;
+  flex-direction: row;
+  width: max-content;
+}

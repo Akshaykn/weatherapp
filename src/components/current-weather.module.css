@@ -1,0 +1,92 @@
+.currentWeather {
+  width: 100%;
+  height: 45vh;
+  color: #fff;
+  display: flex;
+  flex-direction: row;  
+}
+
+.cityName{
+  padding:30px 0px;
+  font-size: 80px;
+}
+
+.temperature{
+  font-size: 60px;
+}
+
+.currentWeatherInner {
+  background-color: #435c5c36;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.weatherDesc{
+  display: flex;
+  flex-direction: row;
+  padding: 10px 10px;
+  font-size: 16px;
+}
+
+.weatherSection1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 30px;
+}
+
+.weatherSection2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.imageWrapper > img{
+  /* filter: invert(1); */
+}
+
+
+@media screen and (max-width: 425px) {
+  .currentWeather {
+  
+  }
+  .cityName{
+    padding:30px;
+    font-size: 30px;
+  }
+  .currentWeatherInner {
+    margin: 10px;
+    background-color: #5af1f11c;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    width: 100%;
+    box-shadow: 1px 1px 1px 0px #ffffff2e;
+  }
+  .temperature{
+    font-size: 24px;
+  }
+  .weatherSection1 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+    align-items: center;
+  }
+  .weatherSection2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0px;
+    padding-top: 10px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .currentWeather {
+    height: 50vh;  
+  }
+}
