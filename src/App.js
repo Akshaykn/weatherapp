@@ -112,6 +112,7 @@ function App() {
   
   return (
     <div className="App">
+      { weatherData ? <>
       <CurrentWeather data={weatherData}>
       </CurrentWeather>
       <Corosal>
@@ -127,7 +128,7 @@ function App() {
           lattitude={weatherData?.coord?.lat || ''}
           longitude={weatherData?.coord?.lon || ''}
           onRefresh={onRefresh}>
-      </FooterWeather>
+      </FooterWeather> </> :  <span> Loading... </span>}
     </div>
   );
 }

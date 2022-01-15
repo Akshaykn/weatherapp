@@ -14,6 +14,14 @@
   margin-left: 10px;  
 }
 
+@media (hover: hover) {
+  .weatherItem:hover {
+    border: 2px solid #fff;
+    cursor: pointer;
+  } 
+}
+ 
+
 .weatherItemInner {
   display: flex;
   flex-direction: row;
