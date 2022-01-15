@@ -123,10 +123,10 @@ function App() {
           </WeatherItem>);
        }) }
       </Corosal>
-      <FooterWeather 
-        lattitude={weatherData.coord.lat}
-        longitude={weatherData.coord.lon}
-        onRefresh={onRefresh}>
+        <FooterWeather 
+          lattitude={weatherData?.coord?.lat || ''}
+          longitude={weatherData?.coord?.lon || ''}
+          onRefresh={onRefresh}>
       </FooterWeather>
     </div>
   );
