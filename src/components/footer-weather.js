@@ -18,7 +18,7 @@ const FooterWeather = (props) => {
            <div className={classes.refresh}
                 onClick={props.onRefresh}> 
               <img src={refreshIcon} 
-                   alt={'refresh'} 
+                   alt={'refresh Icon'} 
                    width={24} 
                    height={24}/> 
            </div>
