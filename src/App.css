@@ -9,6 +9,7 @@
   width: 100vw;
   height: 100vh;
   background-size: cover;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 425px) {
