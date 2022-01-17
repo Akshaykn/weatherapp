@@ -25,6 +25,7 @@
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-  height: calc(100% - 410px);
+  /*height: calc(100vh - 410px);*/
+  height: 126px;
 }
 
