@@ -1,0 +1,39 @@
+.enablePermission {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #242222cf;
+    padding: 15px;
+    z-index: 3000;
+    border-radius: 5px;
+    color: #fff;
+}
+.enablePermissionButtons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}  
+
+.enablePermissionButtons > button {
+    background: #fff;
+    padding: 7px 14px;
+    border-radius: 7px;
+}
+
+.enablePermissionButtons > button:disabled { 
+  cursor: not-allowed;  
+}
+
+@media screen and (max-width: 320px) {
+    .enablePermission{
+        width: 250px;
+        font-size: 14px;
+    }  
+    .enablePermissionButtons > button {
+        font-size: 14px;
+        color: black;
+    }
+}

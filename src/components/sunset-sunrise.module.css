@@ -1,0 +1,83 @@
+:root {
+   --risevalue : -50px;
+   --setValue  : 45px;
+}
+
+.sunsetSunrise {
+   width: 50%;
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   height: 100%; 
+}
+.sunsetSunriseInner--rise, .sunsetSunriseInner--set{
+    height: calc(100% - 32px);
+    position: relative;
+    filter: invert(1);
+}
+
+.sunsetSunriseInner--rise.animate, .sunsetSunriseInner--set.animate{
+  height: calc(100% - 32px);
+  position: relative;
+}
+
+.label, .val {
+  color: #fff;
+  font-size: 8px; 
+}
+.label {
+    color: #fff;
+    font-size: 12px;
+}
+
+.mountainClass {
+  position: absolute;
+  top: calc(100% - 24px);
+}
+
+.sunClass , .mountainClass {
+  position: absolute;
+}
+
+.sunsetSunriseInner--rise > .sunClass {
+  top: calc(100% - 24px);  
+}
+
+.sunsetSunriseInner--rise.animationStoped > .sunClass {
+  top: 0px;   
+}
+
+.sunsetSunriseInner--rise.animate > .sunClass {
+  animation: rise 1s ease-in;   
+}
+
+.sunsetSunriseInner--set > .sunClass {
+  top: 0px;   
+}
+  
+.sunsetSunriseInner--set.animationStoped > .sunClass {
+  top: calc(100% - 24px);
+}
+  
+.sunsetSunriseInner--set.animate > .sunClass {
+  animation: set 1s ease-in;   
+}
+
+@keyframes rise {
+  0% {
+    transform: translateY(0px);    
+  }
+  100% {
+    transform: translateY(var(--risevalue)); 
+  }   
+}
+@keyframes set {
+  100% {
+    transform: translateY(var(--setValue)); 
+  }
+  0% {
+    transform: translateY(0px); 
+  }   
+}

@@ -13,6 +13,10 @@
 
 .temperature{
   font-size: 60px;
+  display: flex;
+  flex-direction: row;
+  width: 45%;
+  justify-content: space-between;
 }
 
 .currentWeatherInner {
@@ -48,11 +52,32 @@
   /* filter: invert(1); */
 }
 
+@media screen and (max-width: 1024px) {
+  .currentWeather {
+    height: 50vh;  
+  }
+  .temperature{
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .currentWeather {
+    height: 50vh;  
+  }
+  .temperature{
+    font-size: 36px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .cityName{
+    font-size: 60px;
+  }
+}
 
 @media screen and (max-width: 425px) {
-  .currentWeather {
-  
-  }
   .cityName{
     padding:30px;
     font-size: 30px;
@@ -68,6 +93,13 @@
   }
   .temperature{
     font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .temperature span:last-child {
+    font-size: 16px;
   }
   .weatherSection1 {
     display: flex;
@@ -81,12 +113,5 @@
     align-items: center;
     padding-left: 0px;
     padding-top: 10px;
-  }
-
-}
-
-@media screen and (max-width: 768px) {
-  .currentWeather {
-    height: 50vh;  
   }
 }

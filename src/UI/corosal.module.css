@@ -1,7 +1,8 @@
 .corosal {
   display: block;
-  overflow: scroll;
+  overflow: auto;
   padding: 0px 10px 10px 10px;
+  overflow-y: hidden;
 }
 .corosalInner{
   display: flex;

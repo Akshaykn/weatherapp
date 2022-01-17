@@ -11,6 +11,7 @@ import rain from './rain.png';
 import clearsky from './sun.png';
 import earth from './earth.png';
 import refresh from './refresh.png';
+import mountain from './mountain.png';
 const fetchIcons = {
     sea_level,
     feels_like,
@@ -25,6 +26,7 @@ const fetchIcons = {
     clearsky,
     earth,
     refresh,
+    mountain,
 };
 
 const nameMapping = {
@@ -35,7 +37,9 @@ const nameMapping = {
     pressure: 'Pressure',
     temp: 'Temperature',
     temp_max :'Max Temperature',
-    temp_min:'Min Temperature', 
+    temp_min:'Min Temperature',
+    sunrise: "Sun Rise",
+    sunset: "Sun Set", 
 };
 
 const unitMapping = {
